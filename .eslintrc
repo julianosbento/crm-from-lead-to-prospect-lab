@@ -1,0 +1,17 @@
+{
+  "extends": ["prettier", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "jest/no-identical-title": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-duplicate-imports": "off"
+  }
+}
