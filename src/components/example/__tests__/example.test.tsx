@@ -1,7 +1,7 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import Example from '../example';
+
 import type { ExampleProps } from '../example';
 
 const initialProps: ExampleProps = {
@@ -10,7 +10,7 @@ const initialProps: ExampleProps = {
 
 describe('<Example />', () => {
   it('should renders default layout properly', () => {
-    render(<Example {...initialProps} />);
-    expect(screen.getByText(initialProps.text!)).toBeInTheDocument();
+    const { getByText } = render(<Example {...initialProps} />);
+    expect(getByText(initialProps.text!)).toBeInTheDocument();
   });
 });

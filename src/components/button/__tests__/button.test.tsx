@@ -1,9 +1,10 @@
-import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
+
+import { colors } from '../../../tokens/colors';
 
 import Button from '../button';
+
 import type { ButtonProps } from '../button';
-import { colors } from '../../../tokens/colors';
 
 const initialProps: ButtonProps = {
   color: colors.success,
@@ -13,23 +14,23 @@ const initialProps: ButtonProps = {
 
 describe('<Button />', () => {
   it('should renders default layout properly', () => {
-    render(<Button {...initialProps} />);
+    const { getByText } = render(<Button {...initialProps} />);
 
-    expect(screen.getByText(initialProps.text!)).toBeInTheDocument();
-    expect(screen.getByText(initialProps.text!)).toHaveStyle({ fontSize: 12 });
+    expect(getByText(initialProps.text!)).toBeInTheDocument();
+    expect(getByText(initialProps.text!)).toHaveStyle({ fontSize: 12 });
   });
 
   it('should renders layout with custom font size properly', () => {
-    render(<Button {...initialProps} fontSize={10} />);
+    const { getByText } = render(<Button {...initialProps} fontSize={10} />);
 
-    expect(screen.getByText(initialProps.text!)).toBeInTheDocument();
-    expect(screen.getByText(initialProps.text!)).toHaveStyle({ fontSize: 10 });
+    expect(getByText(initialProps.text!)).toBeInTheDocument();
+    expect(getByText(initialProps.text!)).toHaveStyle({ fontSize: 10 });
   });
 
   it('should trigger handler on click properly', () => {
-    render(<Button {...initialProps} />);
+    const { getByText } = render(<Button {...initialProps} />);
 
-    fireEvent.click(screen.getByText(initialProps.text!));
+    fireEvent.click(getByText(initialProps.text!));
 
     expect(initialProps.onClick).toHaveBeenCalledTimes(1);
   });

@@ -1,19 +1,20 @@
 import React from 'react';
+import { colors } from '../../tokens/colors';
 
 import * as S from './styled';
 
 export interface ButtonProps {
-  color: string;
+  color?: string;
   fontSize?: number;
   text: string;
   onClick: () => void;
 }
 
-function Button({ text, color, fontSize = 12, onClick }: ButtonProps) {
+function Button({ color = colors.success, fontSize = 12, text, onClick }: ButtonProps) {
   return (
-    <S.Wrapper color={color} fontSize={fontSize} onClick={onClick}>
-      <p>{text}</p>
-    </S.Wrapper>
+    <S.Button color={color} fontSize={fontSize} onClick={onClick}>
+      {text}
+    </S.Button>
   );
 }
 
