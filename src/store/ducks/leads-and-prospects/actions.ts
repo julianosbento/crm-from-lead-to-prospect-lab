@@ -9,6 +9,8 @@ export const setLeads = (leads: Lead[]) => action(LeadsAndProspectsTypes.SET_LEA
 
 export const getLeadsFailure = () => action(LeadsAndProspectsTypes.GET_LEADS_FAILURE);
 
+export const validateLeads = () => action(LeadsAndProspectsTypes.VALIDATE_LEADS);
+
 export const setProspects = (prospects: Lead[]) =>
   action(LeadsAndProspectsTypes.SET_PROSPECTS, { prospects });
 
@@ -19,6 +21,7 @@ const actions = {
   getLeads,
   setLeads,
   getLeadsFailure,
+  validateLeads,
   setProspects,
   leadsAndProspectsClean,
 };
