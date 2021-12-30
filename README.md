@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# CRM from Lead to Prospect
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Capital Technologies
 
-In the project directory, you can run:
+- React
+- Redux e Redux-Saga (using ducks pattern)
+- styled-components
+- json-server
 
-### `npm start`
+## Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+|- api
+|-- db.json
+|- src
+|-- components
+|-- constants
+|-- pages
+|-- services
+|-- store
+|--- ducks
+|-- tokens
+|-- types
+|-- utils
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running the project
 
-### `npm test`
+1. First of all, install the dependencies using `yarn` or `npm install `(consider use the latest LTS version of node)
+2. Open a terminal and run `[yarn or npm run] server`, this will raise at `localhost:3001` the fake api using json-server :D
+3. Open another terminal and run `[yarn or npm run] start`, this will open in the application at `localhost:3000` :D
+4. If never gone wrong, everything is right and now you can punch the "validate leads" button, over the leads list, and magically, the prospects will be discovered :B
+5. To test every little part of the project, just run `[yarn or npm run] test` :D
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Explaining things
 
-### `npm run build`
+### Decisions (personal)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Why I used Redux, instead of ContextAPI, or a local state?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Being very clearly, I don't know what technologies that the company are using, so I decided to use Redux, to validate that I've experience with it!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Why I used styled-components, instead of SCSS or Sass?
 
-### `npm run eject`
+- I'm productive with `styled-components` and prefer the flexibility that the library give, to organize the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Comments (for company)
+1. I think, that live code challenge is more productive, than a take home-exercise, because, develop a project, has an elevated cost of time and energy.
+2. Specifically about this code challenge, I think that the description is OK, I didn't had any problems to implement what was demanded.
