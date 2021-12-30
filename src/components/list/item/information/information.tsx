@@ -5,11 +5,12 @@ import * as S from './styled';
 export interface InformationProps {
   label: string;
   value: string;
+  valueColor?: string;
 }
 
-function Information({ label, value }: InformationProps) {
+function Information({ label, value, valueColor }: InformationProps) {
   return (
-    <S.Wrapper>
+    <S.Wrapper valueColor={valueColor}>
       <p>{label}</p>
       <p>{value}</p>
     </S.Wrapper>
