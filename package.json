@@ -12,6 +12,7 @@
     "@types/react-dom": "^17.0.11",
     "add": "^2.0.6",
     "axios": "^0.24.0",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-collapsible": "^2.8.4",
     "react-dom": "^17.0.2",
@@ -28,7 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --silent",
+    "server": "node_modules/.bin/json-server --watch api/db.json --port 3001",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -56,5 +58,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "json-server": "^0.17.0",
     "prettier": "^2.5.1"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/*.(test).[jt]s?(x)"
+    ]
   }
 }
