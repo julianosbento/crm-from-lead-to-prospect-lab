@@ -7,7 +7,8 @@
       "gender": "male",
       "name": "Nahum Mitrofan Tituana",
       "nid": "48592437",
-      "phone": "+57(656)-6884880"
+      "phone": "+57 (656)-6884880",
+      "score": 0
     },
     {
       "id": "dea339c2-fc8f-4282-a21b-9f6e9ac34325",
@@ -16,7 +17,8 @@
       "gender": "male",
       "name": "Víctor Dante Volpe Ouardi",
       "nid": "37433554",
-      "phone": "+57(656)-1994015"
+      "phone": "+57 (656)-1994015",
+      "score": 0
     },
     {
       "id": "e345e811-438f-4fe5-9d68-89fcf55e744c",
@@ -25,7 +27,8 @@
       "gender": "male",
       "name": "David Santamans Suanes",
       "nid": "50746289",
-      "phone": "+57(333)-2330657"
+      "phone": "+57 (333)-2330657",
+      "score": 0
     },
     {
       "id": "f5cd3f5b-2ee9-441a-81de-3750a7d8cb8c",
@@ -34,7 +37,8 @@
       "gender": "female",
       "name": "Nazarena Haddaoui Canicoba",
       "nid": "59151074",
-      "phone": "+57(032)-688333"
+      "phone": "+57 (032)-688333",
+      "score": 0
     },
     {
       "id": "acfa64af-e1f7-404e-afa0-3f61a72cedec",
@@ -43,7 +47,8 @@
       "gender": "female",
       "name": "Renee Guadalupe Minchala Adarraga",
       "nid": "53883994",
-      "phone": "+57(112)-009221"
+      "phone": "+57 (112)-009221",
+      "score": 0
     },
     {
       "id": "71f6c489-84c9-484b-9e70-1c0215b9ea01",
@@ -52,7 +57,8 @@
       "gender": "male",
       "name": "Milton U. Galstyan Scutaru",
       "nid": "34264053",
-      "phone": "+57(612)-1284381"
+      "phone": "+57 (612)-1284381",
+      "score": 0
     },
     {
       "id": "7806cc56-2c0f-4b86-b0ce-d00e9b64984f",
@@ -61,7 +67,8 @@
       "gender": "female",
       "name": "Fuencisla Attia Bordons",
       "nid": "41104278",
-      "phone": "+57(982)-4104882"
+      "phone": "+57 (982)-4104882",
+      "score": 0
     },
     {
       "id": "6b5f30fa-3bcd-494c-8d3c-888a6d6bd9fd",
@@ -70,7 +77,8 @@
       "gender": "male",
       "name": "Gualterio Frias Collin",
       "nid": "37120192",
-      "phone": "+57(983)-894831"
+      "phone": "+57 (983)-894831",
+      "score": 0
     },
     {
       "id": "7fceb25b-8075-4491-b6a7-a33ce7e6525b",
@@ -79,7 +87,8 @@
       "gender": "female",
       "name": "Amara Angélica Buruiana Sacedon",
       "nid": "34570911",
-      "phone": "+57(423)-8409128"
+      "phone": "+57 (423)-8409128",
+      "score": 0
     },
     {
       "id": "dabad1b5-c5be-416c-aac3-3cd708b4e2a3",
@@ -88,7 +97,8 @@
       "gender": "male",
       "name": "Eusebio Laderas Guerendiain",
       "nid": "54069048",
-      "phone": "+57(859)-4293843"
+      "phone": "+57 (859)-4293843",
+      "score": 0
     }
   ],
   "national_archives": [
@@ -168,7 +178,7 @@
       "id": "ee1882df-c7c4-4bd2-9dcf-cf60fcf62652",
       "birth_date": "2002-10-02",
       "gender": "female",
-      "name": "Fuencisla Attia Bordons",
+      "name": "Fuencisla Bordons",
       "nid": "41104278"
     },
     {
