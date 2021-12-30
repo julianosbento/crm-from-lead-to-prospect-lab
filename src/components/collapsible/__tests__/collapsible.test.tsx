@@ -6,8 +6,8 @@ import type { CollapsibleProps } from 'react-collapsible';
 
 const initialProps: CollapsibleProps = {
   trigger: 'some trigger',
-  onClosing: jest.fn(),
-  onOpening: jest.fn(),
+  onTriggerClosing: jest.fn(),
+  onTriggerOpening: jest.fn(),
 };
 
 describe('<Collapsible />', () => {
@@ -39,7 +39,7 @@ describe('<Collapsible />', () => {
     expect(getByText('Test')).toBeInTheDocument();
   });
 
-  it('should trigger onClosing and onOpening handlers when interact with collapsible properly', () => {
+  it('should trigger onTriggerClosing and onTriggerOpening handlers when interact with collapsible properly', () => {
     const { getByText } = render(
       <Collapsible {...initialProps}>
         <p>Test</p>
@@ -50,10 +50,10 @@ describe('<Collapsible />', () => {
 
     fireEvent.click(collapsible);
 
-    expect(initialProps.onOpening).toHaveBeenCalledTimes(1);
+    expect(initialProps.onTriggerOpening).toHaveBeenCalledTimes(1);
 
     fireEvent.click(collapsible);
 
-    expect(initialProps.onClosing).toHaveBeenCalledTimes(1);
+    expect(initialProps.onTriggerClosing).toHaveBeenCalledTimes(1);
   });
 });

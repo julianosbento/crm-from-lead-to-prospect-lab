@@ -22,7 +22,7 @@ function List({ button, data, title }: ListProps) {
         <Title title={title} />
         {!!button && <Button {...button} />}
       </S.Container>
-      {data.map((props) => (
+      {data?.map((props) => (
         <S.ItemContainer>
           <Item key={props.nid} {...props} />
         </S.ItemContainer>

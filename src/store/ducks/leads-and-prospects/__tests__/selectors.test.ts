@@ -1,25 +1,26 @@
 import { ApplicationState } from '../../..';
 import * as selectors from '../selectors';
 
-import type { LeadsAndProspectsState } from '../types';
+import { expectedLeads, expectedProspects } from './dummy';
 
-describe('leadsAndProspects selector', () => {
+describe('store/ducks/leads-and-prospects/selectors', () => {
   const state: ApplicationState = {
     leadsAndProspects: {
       error: false,
-      leadsAndProspects: '',
+      leads: expectedLeads,
+      prospects: expectedProspects,
       loading: false,
     },
   };
 
-  it('getLeadsAndProspects()', () => {
-    const actualResult = selectors.getLeadsAndProspects(state);
-    expect(actualResult).toBe('');
+  it('getLeads()', () => {
+    const actualResult = selectors.getLeads(state);
+    expect(actualResult).toEqual(expectedLeads);
   });
 
-  it('getLeadsAndProspectsError()', () => {
-    const actualResult = selectors.getLeadsAndProspectsError(state);
-    expect(actualResult).toBe(false);
+  it('getProspects()', () => {
+    const actualResult = selectors.getLeads(state);
+    expect(actualResult).toEqual(expectedProspects);
   });
 
   it('getLeadsAndProspectsLoading()', () => {
