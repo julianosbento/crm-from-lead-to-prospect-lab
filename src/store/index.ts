@@ -5,11 +5,9 @@ import createSagaMiddleware from 'redux-saga';
 import rootReducer from './ducks/rootReducer';
 import rootSaga from './ducks/rootSaga';
 
-import type { ExampleState } from './ducks/example/types';
 import type { LeadsAndProspectsState } from './ducks/leads-and-prospects/types';
 
 export interface ApplicationState {
-  example: ExampleState;
   leadsAndProspects: LeadsAndProspectsState;
 }
 

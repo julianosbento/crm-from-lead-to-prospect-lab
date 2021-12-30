@@ -8,15 +8,25 @@ export interface Lead {
   firstName: string;
   gender: Gender;
   lastName: string;
+  name: string;
   nid: string;
   phone: string;
+  score: number;
 }
 
-export interface LeadsResponse {
+export type LeadResponse = {
+  id: string;
   birth_date: string;
   email: string;
   gender: Gender;
   name: string;
   nid: string;
   phone: string;
-}
+  score: number;
+};
+
+export type LeadsResponse = Array<LeadResponse>;
+
+export type NationalRegistryResponse = Array<Omit<LeadResponse, 'email' | 'phone' | 'score'>>;
+
+export type NationalArchivesResponse = Array<Omit<LeadResponse, 'email' | 'phone' | 'score'>>;

@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 import { colors } from '../../../../tokens/colors';
 
-export const Wrapper = styled.li`
+interface WrapperProps {
+  valueColor?: string;
+}
+
+export const Wrapper = styled.div<WrapperProps>`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -15,7 +19,7 @@ export const Wrapper = styled.li`
   }
 
   > :last-child {
-    color: ${colors.text};
+    color: ${({ valueColor }) => valueColor ?? colors.text};
     font-size: 12px;
 
     :hover,

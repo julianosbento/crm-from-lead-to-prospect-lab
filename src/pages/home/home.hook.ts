@@ -20,7 +20,7 @@ export default function useHomeScreen(): UseHomeScreen {
   const prospects = useSelector(leadsAndProspectsSelectors.getProspects);
 
   function handleLeadsValidation() {
-    return;
+    dispatch(leadsAndProspectsAct.validateLeads());
   }
 
   useEffect(() => {
