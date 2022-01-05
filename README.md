@@ -33,19 +33,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Open another terminal and run `[yarn or npm run] start`, this will open in the application at `localhost:3000` :D
 4. If never gone wrong, everything is right and now you can punch the "validate leads" button, over the leads list, and magically, the prospects will be discovered :B
 5. To test every little part of the project, just run `[yarn or npm run] test` :D
-
-## Explaining things
-
-### Decisions (personal)
-
-> Why I used Redux, instead of ContextAPI, or a local state?
-
-- Being very clearly, I don't know what technologies that the company are using, so I decided to use Redux, to validate that I've experience with it!
-
-> Why I used styled-components, instead of SCSS or Sass?
-
-- I'm productive with `styled-components` and prefer the flexibility that the library give, to organize the project.
-
-### Comments (for company)
-1. I think, that live code challenge is more productive, than a take home-exercise, because, develop a project, has an elevated cost of time and energy.
-2. Specifically about this code challenge, I think that the description is OK, I didn't had any problems to implement what was demanded.
